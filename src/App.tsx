@@ -1,17 +1,13 @@
 import './App.css';
-import InputButton from './components/input-button/input-button.component';
-import InputText from './components/input-text/input-text.component';
+import AddTodo from './components/add-todo/add-todo.component';
+import ListTodo from './components/list-todo/list-todo.component';
 
 function App() {
   return (
-    <div className="App">
-      <span className="heading">Taskify</span>
-      <div>
-        <InputText />
-        <InputButton />
-      </div>
-
-    </div>
+    <>
+    <AddTodo />
+    <ListTodo />
+    </>
   );
 }
 
