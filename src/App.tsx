@@ -1,15 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import InputButton from './components/input-text/input-text.component';
+import InputButton from './components/input-button/input-button.component';
+import InputText from './components/input-text/input-text.component';
 
 function App() {
   return (
     <div className="App">
-      <InputButton />
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <span className="heading">Taskify</span>
+      <div>
+        <InputText />
+        <InputButton />
+      </div>
+
     </div>
   );
 }
