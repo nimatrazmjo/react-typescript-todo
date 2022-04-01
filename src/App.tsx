@@ -20,7 +20,7 @@ function App() {
   return (
     <>
     <AddTodo />
-    <ListTodo todos={todos} />
+    <ListTodo/>
     </>
   );
 }

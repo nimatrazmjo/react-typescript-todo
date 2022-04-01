@@ -5,6 +5,8 @@ import rootReducer from './root.reducer';
 
 const middleware = [logger]
 
-const store  = createStore(rootReducer, applyMiddleware(...middleware));
+export const store  = createStore(rootReducer, applyMiddleware(...middleware));
 
-export default store;
+export type RootState = ReturnType<typeof store.getState>
+
+export type AppDispatch = typeof store.dispatch
