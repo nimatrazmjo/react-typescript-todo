@@ -1,14 +1,14 @@
 import React from 'react'
+import { Todo } from '../../models/todo';
+import ListItem from '../list-item/list-item.component';
 
-const ListTodo:React.FC = () => {
+interface Props {
+    todos: Todo[]
+}
+const ListTodo:React.FC<Props> = ({todos}) => {
     return (
         <ul id="myUL">
-            <li>Hit the gym</li>
-            <li className='checked'>Pay bills</li>
-            <li>Meet George</li>
-            <li>Buy eggs</li>
-            <li>Read a book</li>
-            <li>Organize office</li>
+            {todos.map(todo => <ListItem id={todo.id} value={todo.todo} />)}
         </ul>
     )
 }

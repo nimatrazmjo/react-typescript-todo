@@ -12,13 +12,14 @@ function App() {
     console.log(todo, 'todoo');
     
     if (todo) {
-      setTodos([...todos, {id:Date.now(), todo, isDone: false}])
+      setTodos([...todos, {id:Date.now(), todo, isDone: false}]);
+      setTodo('')
     }  
   }
   return (
     <>
     <AddTodo todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
-    <ListTodo />
+    <ListTodo todos={todos} />
     </>
   );
 }
