@@ -5,17 +5,17 @@ interface ActionType {
     payload: Todo | number;
 }
 
-export const AddTodo = (todo: Todo): ActionType => ({
+export const AddTodoAction = (todo: Todo): ActionType => ({
     type: TodoType.ADD_TODO,
     payload: todo
 });
 
-export const DeleteTodo = (id: number): ActionType => ({
+export const DeleteTodoAction = (id: number): ActionType => ({
     type: TodoType.DELETE_TODO,
     payload: id
 });
 
-export const DoneTodo = (id: number): ActionType => ({
+export const DoneTodoAction = (id: number): ActionType => ({
     type: TodoType.DONE_TODO,
     payload: id
 });
