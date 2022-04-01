@@ -1,0 +1,16 @@
+li {
+    position:relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.action {
+    display: flex;
+}
+.action span {
+    margin-right: 10px;
+}
+
+li span {
+    display: block;
+}
