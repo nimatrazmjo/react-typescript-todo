@@ -1,7 +1,6 @@
 import React from 'react';
 import { AiFillDelete, AiFillEdit } from 'react-icons/ai';
 import { MdDone } from 'react-icons/md';
-import { useSelector } from 'react-redux';
 import './list-item.style.css';
 interface Props {
     id: number,
